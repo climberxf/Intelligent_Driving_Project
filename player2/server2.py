@@ -6,6 +6,7 @@ import numpy as np
 import struct
 
 
+# 定义服务端
 class Server:
     def __init__(self, host, port, bufsize):
         self.host = host

@@ -7,6 +7,7 @@ import numpy as np
 from server2 import display_frames
 
 
+# 定义客户端
 class Client:
     def __init__(self, Host, Port, Buf_size):
         # 创建相关socket对象

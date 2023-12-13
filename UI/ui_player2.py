@@ -20,6 +20,7 @@ from PySide6.QtWidgets import (QApplication, QFrame, QHBoxLayout, QLabel,
                                QWidget)
 
 
+# ui界面
 class Ui_app(object):
     def setupUi(self, app):
         if not app.objectName():

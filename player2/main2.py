@@ -13,6 +13,7 @@ import cv2
 
 
 # 注意此处所选的父类要和刚开始创建的一样
+
 class MainWindow(QWidget):
     def __init__(self, host, port, buf_size):
         super().__init__()
