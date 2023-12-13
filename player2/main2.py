@@ -71,7 +71,7 @@ class MainWindow(QWidget):
         self.ui.set_text('系统已关闭')
 
 
-def frame_trans(fra):#将图像帧转换为能在ui上显示
+def frame_trans(fra):  # 将图像帧转换为能在ui上显示
     rgb_image = cv2.cvtColor(fra, cv2.COLOR_BGR2RGB)
     h, w, ch = rgb_image.shape
     bytes_per_line = ch * w
