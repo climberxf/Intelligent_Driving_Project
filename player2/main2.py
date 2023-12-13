@@ -1,5 +1,5 @@
 import sys
-from UI.ui_player1 import *
+from UI.ui_player2 import *
 from client2 import *
 from PySide6.QtCore import QTimer
 from PySide6.QtWidgets import QApplication, QWidget
