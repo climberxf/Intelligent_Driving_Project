@@ -69,7 +69,7 @@ class Server:
                     # 将图像帧放入队列
                     self.frame_queue_rec.put(frame)
                     self.frame_queue_send.put(frame)
-                print(1)
+                print('+1')
 
             except Exception as e:
                 print('receive_message', self.error_text, e)

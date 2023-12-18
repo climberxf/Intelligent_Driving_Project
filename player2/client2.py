@@ -28,6 +28,9 @@ class Client:
         self.off = False
         # send_thread.start()
 
+        self.num1 = 0
+        self.num2 = 0
+
     def connect(self):  # socket连接并且开启线程
         self.client_socket.connect((self.host, self.port))
 
@@ -62,6 +65,8 @@ class Client:
 
                 # 发送视频帧到服务器
                 self.client_socket.sendall(jpeg_data)
+                self.num1 += 1
+                print(self.num1)
                 print('已成功发送一帧')
 
                 if self.off:
@@ -84,6 +89,8 @@ class Client:
                 while len(data) < frame_length:
                     # 根据长度信息接收整个帧
                     packet = self.client_socket.recv(self.buf_size)
+                    self.num2 += 1
+                    print(self.num2)
                     if not packet:
                         break
                     data += packet

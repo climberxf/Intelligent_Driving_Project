@@ -158,4 +158,4 @@ class Ui_app(object):
     # retranslateUi
 
     def set_text(self, text):
-        self.add.setText('***' + text + '***')
+        self.add.setText('****' + text + '****')

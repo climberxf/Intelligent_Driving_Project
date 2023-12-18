@@ -82,6 +82,6 @@ def frame_trans(fra):  # 将图像帧转换为能在ui上显示
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    player = MainWindow('192.168.43.133', 1900, 60000)
+    player = MainWindow('192.168.43.58', 1900, 600000)
     player.show()
     sys.exit(app.exec_())
